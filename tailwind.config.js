@@ -14,11 +14,13 @@ module.exports = {
       },
       fontSize: {
         title: "31.25px",
+        titleSm: "20px",
         button: "13.8px",
       },
       lineHeight: {
         button: "17.48px",
         large: "40.62px",
+        mid: "26px",
         normal: "20.48px",
       },
       fontFamily: {

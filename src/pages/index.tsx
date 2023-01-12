@@ -12,9 +12,9 @@ const IndexPage: React.FC<PageProps> = () => {
           src="../images/life-style.png"
           alt="Life Style Image"
         />
-        <div className="z-10 -mt-72 sm:mt-0">
+        <div className="z-10 -mt-60 sm:mt-0">
           <div className="p-10 lg:pt-24 xl:pl-30 xl:pr-36">
-            <h4 className="font-title text-title font-bold leading-large text-white sm:text-black">
+            <h4 className="font-title text-titleSm font-bold leading-mid text-white sm:text-title sm:leading-large sm:text-black">
               Everyday items, we have something to suit every occasion.
             </h4>
             <p className="hidden pt-3 leading-normal text-light sm:block">
@@ -23,7 +23,7 @@ const IndexPage: React.FC<PageProps> = () => {
             </p>
             <Button
               text="Shop All Everyday Items"
-              className="mt-8 border-white text-white sm:border-black sm:text-black"
+              className="mt-8 border-white text-white  sm:text-black"
             />
           </div>
         </div>
