@@ -10,6 +10,12 @@ module.exports = {
         30: "7.5rem",
       },
     },
+    fontSize: {
+      title: "31.25px",
+    },
+    fontFamily: {
+      title: ["ITCAvantGardePro"],
+    },
   },
   plugins: [],
 };
