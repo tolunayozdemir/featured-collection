@@ -9,12 +9,21 @@ module.exports = {
       spacing: {
         30: "7.5rem",
       },
-    },
-    fontSize: {
-      title: "31.25px",
-    },
-    fontFamily: {
-      title: ["ITCAvantGardePro"],
+      colors: {
+        light: "#666666",
+      },
+      fontSize: {
+        title: "31.25px",
+        button: "13.8px",
+      },
+      lineHeight: {
+        button: "17.48px",
+        large: "40.62px",
+        normal: "20.48px",
+      },
+      fontFamily: {
+        title: ["ITCAvantGardePro"],
+      },
     },
   },
   plugins: [],
