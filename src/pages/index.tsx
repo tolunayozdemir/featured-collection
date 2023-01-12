@@ -17,7 +17,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <h4 className="font-title text-title font-bold leading-large text-white sm:text-black">
               Everyday items, we have something to suit every occasion.
             </h4>
-            <p className="hidden pt-3 leading-large text-light sm:block">
+            <p className="hidden pt-3 leading-normal text-light sm:block">
               At suspendisse augue lectus arcu, accumsan ut sit posuere vitae
               sit tincidunt semper eu proin leo gravida cursus.
             </p>
