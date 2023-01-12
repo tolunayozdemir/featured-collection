@@ -2,6 +2,7 @@ import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Button from "../components/Button";
+import ItemList from "../components/ItemList";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -13,7 +14,7 @@ const IndexPage: React.FC<PageProps> = () => {
           alt="Life Style Image"
         />
         <div className="z-10 -mt-60 sm:mt-0">
-          <div className="p-10 lg:pt-24 xl:pl-30 xl:pr-36">
+          <div className="p-8 pl-6 sm:p-12 xl:pt-24 xl:pl-30 xl:pr-36">
             <h4 className="font-title text-titleSm font-bold leading-mid text-white sm:text-title sm:leading-large sm:text-black">
               Everyday items, we have something to suit every occasion.
             </h4>
@@ -26,6 +27,7 @@ const IndexPage: React.FC<PageProps> = () => {
               className="mt-8 border-white text-white  sm:text-black"
             />
           </div>
+          <ItemList />
         </div>
       </div>
     </main>

@@ -16,6 +16,7 @@ module.exports = {
         title: "31.25px",
         titleSm: "20px",
         button: "13.8px",
+        small: "12.8px",
       },
       lineHeight: {
         button: "17.48px",
