@@ -1,7 +1,7 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import Button from "../components/Button";
+import TextButton from "../components/TextButton";
 import ItemList from "../components/ItemList";
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -22,7 +22,7 @@ const IndexPage: React.FC<PageProps> = () => {
               At suspendisse augue lectus arcu, accumsan ut sit posuere vitae
               sit tincidunt semper eu proin leo gravida cursus.
             </p>
-            <Button
+            <TextButton
               text="Shop All Everyday Items"
               className="mt-8 border-white text-white  sm:text-black"
             />

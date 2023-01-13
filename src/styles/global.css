@@ -27,3 +27,51 @@
   font-family: Avenir;
   line-height: 20.48px;
 }
+
+.radio {
+  font-size: 30px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  color: black;
+}
+
+input {
+  display: none;
+}
+
+.circle {
+  position: relative;
+  height: 0.75rem;
+  width: 0.75rem;
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.circle:hover {
+  opacity: 0.7;
+}
+
+.circle:after {
+  content: "";
+  height: 0.625rem;
+  width: 0.625rem;
+  display: block;
+  position: absolute;
+  background: inherit;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.radio input:checked ~ .circle:after {
+  height: 0.5rem;
+  width: 0.5rem;
+  border: 1px solid white;
+}
+.radio input:checked ~ .circle {
+  border: 1px solid black !important;
+}

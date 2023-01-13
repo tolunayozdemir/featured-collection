@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import RadioButton from "./RadiButton";
 
 const items = [
   {
@@ -23,19 +24,15 @@ const items = [
 ];
 
 function Colors({ colors }: { colors: string[] }) {
-  const uid = Math.random().toString();
+  const name = Math.random().toString();
   return (
-    <div>
+    <ul className="grid grid-flow-col gap-2">
       {colors.map((color, i) => (
-        <input
-          key={uid + i}
-          type="radio"
-          value={color}
-          defaultChecked={i === 0}
-          name={uid}
-        />
+        <li key={name + i}>
+          <RadioButton color={color} name={name} defaultChecked={i === 0} />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
@@ -45,7 +42,11 @@ export default function ItemList() {
       {items.map(({ name, image, price, colors }) => {
         return (
           <li key={name} className="mr-8 flex-none">
-            <img className="h-72 w-56 object-cover" src={image} alt={name} />
+            <img
+              className="h-72 w-56 object-cover hover:cursor-pointer hover:opacity-75"
+              src={image}
+              alt={name}
+            />
             <div className="mt-3 text-small">
               <p>{name}</p>
               <div className="mt-1 flex items-center justify-between">

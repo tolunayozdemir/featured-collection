@@ -8,7 +8,11 @@ interface IButtonProps
   text: string;
 }
 
-export default function Button({ text, className, ...props }: IButtonProps) {
+export default function TextButton({
+  text,
+  className,
+  ...props
+}: IButtonProps) {
   return (
     <button
       className={[
