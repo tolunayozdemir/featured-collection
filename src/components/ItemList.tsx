@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
-import React from "react";
+import React, { useRef } from "react";
 import RadioButton from "./RadiButton";
+import SquareButton from "./SquareButton";
 
 const items = [
   {
@@ -37,26 +38,38 @@ function Colors({ colors }: { colors: string[] }) {
 }
 
 export default function ItemList() {
+  const ref = useRef<any>();
+
   return (
-    <ul className="flex-r o scrolling ml-6 flex overflow-x-auto overflow-y-hidden sm:ml-12 xl:ml-30">
-      {items.map(({ name, image, price, colors }) => {
-        return (
-          <li key={name} className="mr-8 flex-none">
-            <img
-              className="h-72 w-56 object-cover hover:cursor-pointer hover:opacity-75"
-              src={image}
-              alt={name}
-            />
-            <div className="mt-3 text-small">
-              <p>{name}</p>
-              <div className="mt-1 flex items-center justify-between">
-                <span className="font-semibold">{price}</span>
-                <Colors colors={colors} />
+    <div className="flex items-center">
+      <ul
+        ref={ref}
+        className="flex-r o scrolling ml-6 flex overflow-x-auto overflow-y-hidden scroll-smooth transition-all sm:ml-12 xl:ml-30"
+      >
+        {items.map(({ name, image, price, colors }) => {
+          return (
+            <li key={name} className="mr-8 flex-none">
+              <img
+                className="h-72 w-56 object-cover hover:cursor-pointer hover:opacity-75"
+                src={image}
+                alt={name}
+              />
+              <div className="mt-3 text-small">
+                <p>{name}</p>
+                <div className="mt-1 flex items-center justify-between">
+                  <span className="font-semibold">{price}</span>
+                  <Colors colors={colors} />
+                </div>
               </div>
-            </div>
-          </li>
-        );
-      })}
-    </ul>
+            </li>
+          );
+        })}
+      </ul>
+      <SquareButton
+        onClick={() => {
+          ref.current.scrollLeft += 35;
+        }}
+      />
+    </div>
   );
 }
