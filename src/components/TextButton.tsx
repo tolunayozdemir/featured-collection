@@ -16,7 +16,7 @@ export default function TextButton({
   return (
     <button
       className={[
-        "border-b border-black pb-1 text-small font-semibold leading-button hover:opacity-60 active:opacity-40",
+        "border-b border-white pb-1 text-small font-semibold leading-button hover:opacity-60 active:opacity-40 sm:border-black",
         className,
       ].join(" ")}
       {...props}

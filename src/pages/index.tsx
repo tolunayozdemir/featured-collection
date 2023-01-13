@@ -15,7 +15,7 @@ const IndexPage: React.FC<PageProps> = () => {
         />
         <div className="z-10 -mt-60 sm:mt-0">
           <div className="p-8 pl-6 sm:p-12 xl:pt-24 xl:pl-30 xl:pr-36">
-            <h4 className="font-title text-titleSm font-bold leading-large text-white sm:text-title sm:leading-large sm:text-black">
+            <h4 className="font-title text-titleSm font-bold leading-mid text-white sm:text-title sm:leading-large sm:leading-large sm:text-black">
               Everyday items, we have something to suit every occasion.
             </h4>
             <p className="hidden pt-3 leading-mid text-light sm:block">
