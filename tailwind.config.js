@@ -25,7 +25,7 @@ module.exports = {
         normal: "20.48px",
       },
       fontFamily: {
-        title: ["ITC Avant Garde Gothic Pro"],
+        title: ["'ITC Avant Garde Gothic Std', sans-serif"],
       },
     },
   },
