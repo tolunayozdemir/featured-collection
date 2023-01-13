@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React, { useRef } from "react";
-import RadioButton from "./RadiButton";
+import RadioButton from "./RadioButton";
 import SquareButton from "./SquareButton";
 
 const items = [
