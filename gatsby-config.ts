@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: "/featured-collection",
   siteMetadata: {
     title: `Featured Collection`,
     siteUrl: `https://www.yourdomain.tld`,
