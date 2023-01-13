@@ -11,11 +11,11 @@ module.exports = {
       },
       colors: {
         light: "#666666",
+        borderColor: "rgba(0,0,0, 40%)",
       },
       fontSize: {
         title: "31.25px",
         titleSm: "20px",
-        button: "13.8px",
         small: "12.8px",
       },
       lineHeight: {
@@ -25,7 +25,7 @@ module.exports = {
         normal: "20.48px",
       },
       fontFamily: {
-        title: ["ITCAvantGardePro"],
+        title: ["ITC Avant Garde Gothic Pro"],
       },
     },
   },

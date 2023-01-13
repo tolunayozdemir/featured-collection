@@ -2,27 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: Avenir;
-  font-weight: 400;
-  font-style: normal;
-  src: url("/fonts/Avenir.ttc") format("truetype");
-}
-
-@font-face {
-  font-family: ITCAvantGardePro;
-  font-weight: 500;
-  font-style: normal;
-  src: url("/fonts/ITCAvantGardePro-Md.otf") format("opentype");
-}
-
-@font-face {
-  font-family: ITCAvantGardePro;
-  font-weight: 700;
-  font-style: normal;
-  src: url("/fonts/ITCAvantGardePro-Bold.otf") format("opentype");
-}
-
 :root {
   font-family: Avenir;
   line-height: 20.48px;

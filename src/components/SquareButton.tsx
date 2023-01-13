@@ -23,7 +23,7 @@ export default function SquareButton({ onClick }: { onClick?: () => void }) {
   return (
     <button
       onClick={onClick}
-      className="absolute right-12 top-auto flex h-10 w-10 items-center justify-center border border-light hover:opacity-50"
+      className="absolute right-12 top-auto flex h-10 w-10 items-center justify-center border border-borderColor hover:opacity-50"
     >
       <Icon />
     </button>
